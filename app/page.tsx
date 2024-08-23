@@ -7,7 +7,10 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="max-h-dvh p-0">
-      <nav id="topbar" className="flex justify-between lg:justify-evenly pt-2 px-2">
+      <nav
+        id="topbar"
+        className="flex justify-between lg:justify-evenly pt-2 px-2"
+      >
         <User />
         <Balance />
       </nav>
@@ -48,7 +51,7 @@ export default function Home() {
           id="main-action-button"
           className="w-full flex justify-center mt-8 px-4"
         >
-          <button className="fill text-xl font-medium w-full lg:w-1/3 rounded-lg h-14 bg-bgButton shadow-lg shadow-black/40 ">
+          <button className="fill text-xl font-medium w-full lg:w-1/3 rounded-lg h-14 bg-bgButton border-b-2 border-blue-700 ">
             {" "}
             Claim <span className="font-bold">948 coins</span>
           </button>
@@ -57,7 +60,7 @@ export default function Home() {
 
       <section
         id="bottom-navbar.container"
-        className="flex justify-center my-10 px-4"
+        className="flex justify-center px-4"
       >
         <section
           id="bottom-navbar"
