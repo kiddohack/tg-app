@@ -18,6 +18,8 @@ const config: Config = {
         bgButton: "#148bf9",
         bgBtNav: "#131315",
         bgBtButton: "#848485",
+        bgMidd: "#021c39",
+        bgMain: "#0B0B0C",
       },
     },
   },

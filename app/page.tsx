@@ -6,53 +6,58 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="max-h-dvh m-3 md:m-10 ">
-      <nav id="topbar" className="flex justify-between lg:justify-evenly">
+    <main className="max-h-dvh p-0">
+      <nav id="topbar" className="flex justify-between lg:justify-evenly pt-2">
         <User />
         <Balance />
       </nav>
 
       <section
-        id="top-buttons"
-        className="mt-5 flex lg:justify-center justify-evenly"
+        id="mid-container"
+        className="bg-bgMidd py-4 rounded-t-3xl border-t-bgCoin border-t-4 bg-gradient-to-b from-bgMidd to-bgMain"
       >
-        <Button title="Daily Login" path="/daily-login" img="/gift.svg" />
-        <Button title="Combo" path="/combo" img="/combo.svg" />
-        <Button title="Daily Word" path="/daily-word" img="/daily_word.svg" />
-        <Button title="Roullete" path="/roullete" img="/roullete.svg" />
-      </section>
+        <section
+          id="top-buttons"
+          className="flex lg:justify-center justify-evenly"
+        >
+          <Button title="Daily Login" path="/daily-login" img="/gift.svg" />
+          <Button title="Combo" path="/combo" img="/combo.svg" />
+          <Button title="Daily Word" path="/daily-word" img="/daily_word.svg" />
+          <Button title="Roullete" path="/roullete" img="/roullete.svg" />
+        </section>
 
-      <section id="currency-container" className="flex justify-center">
-        <div id="currency">
-          <div className="text-2xl md:text-4xl font-bold pt-12 flex justify-center">
-            0.0034249
+        <section id="currency-container" className="flex justify-center">
+          <div id="currency">
+            <div className="text-2xl md:text-4xl font-bold pt-12 flex justify-center">
+              0.0034249
+            </div>
+            <div className="relative">
+              <Image
+                className="p-8 w-full"
+                src="/big_coin.svg"
+                alt="Big Coin"
+                width={0}
+                height={0}
+              />
+              <div className="absolute inset-0 rounded-full border-4 border-transparent bg-gradient-to-r from-blue-400 to-blue-200 blur-lg opacity-30 "></div>
+            </div>
           </div>
-          <div className="relative">
-            <Image
-              className="p-4 w-36 md:w-full"
-              src="/big_coin.svg"
-              alt="Big Coin"
-              width={0}
-              height={0}
-            />
-            <div className="absolute inset-0 rounded-full border-2 border-transparent bg-gradient-to-r from-blue-400 to-blue-200 blur-lg opacity-30"></div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <section
-        id="main-action-button"
-        className="w-full flex justify-center mt-8"
-      >
-        <button className="fill text-xl font-medium w-full lg:w-1/3 rounded-lg h-14 bg-bgButton shadow-lg shadow-black/40">
-          {" "}
-          Claim <span className="font-bold">948 coins</span>
-        </button>
+        <section
+          id="main-action-button"
+          className="w-full flex justify-center mt-8 "
+        >
+          <button className="fill text-xl font-medium w-full lg:w-1/3 rounded-lg h-14 bg-bgButton shadow-lg shadow-black/40 ">
+            {" "}
+            Claim <span className="font-bold">948 coins</span>
+          </button>
+        </section>
       </section>
 
       <section
         id="bottom-navbar.container"
-        className="flex justify-center my-10"
+        className="flex justify-center my-10 "
       >
         <section
           id="bottom-navbar"

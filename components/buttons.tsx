@@ -9,13 +9,13 @@ type ButtonComponents = {
 
 export default function Button({ path, title, img }: ButtonComponents) {
   return (
-    <section className="rounded-lg mx-1 lg:mx-2 p-0 flex">
+    <section className="lg:rounded-3xl rounded-xl mx-1 lg:mx-2 p-0 flex border-b-2 border-b-gray-700">
       <Link
         href={path}
-        className="md:m-10 text-xs lg:text-xl flex-col justify-center backdrop-blur-xl"
+        className="md:m-10 text-xs lg:text-xl flex-col justify-center "
       >
         <Image
-          className="m-0 p-0 w-16 md:w-full h-full"
+          className="m-0 mb-2 w-16 md:w-full h-full"
           src={img}
           alt={`${title} button image`}
           height={0}
