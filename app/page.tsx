@@ -21,7 +21,7 @@ export default function Home() {
 
       <section
         id="mid-container"
-        className="bg-bgMidd py-4 rounded-t-3xl border-t-bgCoin border-t-4 bg-gradient-to-b from-bgMidd to-bgMain mt-4"
+        className="py-4 rounded-t-3xl border-t-bgCoin border-t-4 bg-gradient-to-b from-bgMidd to-bgMain mt-4"
       >
         <section id="top-buttons" className="flex justify-evenly items-center">
           <Button title="Daily Login" path="/daily-login" img="/gift.svg" />
@@ -35,7 +35,7 @@ export default function Home() {
             <div className="text-2xl md:text-4xl font-normal pt-12 flex justify-center">
               0.0034249
             </div>
-            <div className="relative">
+            <div className="relative w-full">
               <Image
                 className="p-8 w-full"
                 src="/big_coin.svg"
@@ -43,7 +43,7 @@ export default function Home() {
                 width={0}
                 height={0}
               />
-              <div className="absolute inset-0 rounded-full border-4 border-transparent bg-gradient-to-r from-blue-400 to-blue-200 blur-lg opacity-30 "></div>
+              <div className="absolute inset-0 rounded-full border-4 border-transparent bg-blue-400 blur-lg opacity-30 "></div>
             </div>
           </div>
         </section>
