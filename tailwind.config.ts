@@ -20,6 +20,7 @@ const config: Config = {
         bgBtButton: "#848485",
         bgMidd: "#021c39",
         bgMain: "#0B0B0C",
+        topShadow: "#152d6e",
       },
     },
   },

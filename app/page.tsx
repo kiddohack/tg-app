@@ -15,9 +15,13 @@ export default function Home() {
         <Balance />
       </nav>
 
+      <div className="relative">
+        <div className="absolute w-full h-12 -top-2 bg-topShadow rounded-xl -z-10 filter blur-md"></div>
+      </div>
+
       <section
         id="mid-container"
-        className="bg-bgMidd py-4 rounded-t-3xl border-t-bgCoin border-t-4 bg-gradient-to-b from-bgMidd to-bgMain"
+        className="bg-bgMidd py-4 rounded-t-3xl border-t-bgCoin border-t-4 bg-gradient-to-b from-bgMidd to-bgMain mt-4"
       >
         <section id="top-buttons" className="flex justify-evenly items-center">
           <Button title="Daily Login" path="/daily-login" img="/gift.svg" />
