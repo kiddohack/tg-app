@@ -19,10 +19,7 @@ export default function Home() {
         id="mid-container"
         className="bg-bgMidd py-4 rounded-t-3xl border-t-bgCoin border-t-4 bg-gradient-to-b from-bgMidd to-bgMain"
       >
-        <section
-          id="top-buttons"
-          className="flex lg:justify-center justify-evenly"
-        >
+        <section id="top-buttons" className="flex justify-evenly items-center">
           <Button title="Daily Login" path="/daily-login" img="/gift.svg" />
           <Button title="Combo" path="/combo" img="/combo.svg" />
           <Button title="Daily Word" path="/daily-word" img="/daily_word.svg" />
@@ -31,7 +28,7 @@ export default function Home() {
 
         <section id="currency-container" className="flex justify-center">
           <div id="currency">
-            <div className="text-2xl md:text-4xl font-bold pt-12 flex justify-center">
+            <div className="text-2xl md:text-4xl font-normal pt-12 flex justify-center">
               0.0034249
             </div>
             <div className="relative">
