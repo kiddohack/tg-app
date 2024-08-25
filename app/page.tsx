@@ -1,6 +1,7 @@
 import Balance from "@/components/balance";
 import Button from "@/components/buttons";
 import IconButtons from "@/components/iconButtons";
+import Star from "@/components/stars";
 import User from "@/components/user";
 import Image from "next/image";
 
@@ -21,18 +22,24 @@ export default function Home() {
 
       <section
         id="mid-container"
-        className="py-4 rounded-t-3xl border-t-bgCoin border-t-4 bg-gradient-to-b from-bgMidd to-bgMain mt-4"
+        className="relative pt-4 rounded-t-3xl border-t-bgCoin border-t-4 bg-bgMidd mt-4"
       >
-        <section id="top-buttons" className="flex justify-evenly items-center">
+        <section
+          id="top-buttons"
+          className="flex justify-evenly lg:justify-center items-center"
+        >
           <Button title="Daily Login" path="/daily-login" img="/gift.svg" />
           <Button title="Combo" path="/combo" img="/combo.svg" />
           <Button title="Daily Word" path="/daily-word" img="/daily_word.svg" />
           <Button title="Roullete" path="/roullete" img="/roullete.svg" />
         </section>
 
+        <Star top="" left="left-14" bottom="" right="" />
+        <Star top="top-32" left="left-56" bottom="" right="" />
+
         <section id="currency-container" className="flex justify-center">
           <div id="currency">
-            <div className="text-2xl md:text-4xl font-normal pt-12 flex justify-center">
+            <div className="text-2xl md:text-4xl font-medium pt-8 flex justify-center">
               0.0034249
             </div>
             <div className="relative w-full">
@@ -43,16 +50,22 @@ export default function Home() {
                 width={0}
                 height={0}
               />
-              <div className="absolute inset-0 rounded-full border-4 border-transparent bg-blue-400 blur-lg opacity-30 "></div>
+              <div className="absolute inset-0 rounded-full border-4 border-transparent bg-blue-400 blur-xl opacity-30 left"></div>
             </div>
           </div>
         </section>
 
+        <Star top="top-48" left="left-80" bottom="" right="" />
+        <Star top="" left="left-80" bottom="bottom-20" right="" />
+        <Star top="" left="left-12" bottom="bottom-32" right="" />
+        <Star top="top-40" left="left-2" bottom="" right="" />
+        <Star top="top-48" left="left-32" bottom="" right="" />
+
         <section
           id="main-action-button"
-          className="w-full flex justify-center mt-8 px-4"
+          className="w-full flex justify-center mt-4 pb-2 px-4 bg-gradient-to-b from-bgMidd to-bgMain"
         >
-          <button className="fill text-xl font-medium w-full lg:w-1/3 rounded-lg h-14 bg-bgButton border-b-2 border-blue-700 ">
+          <button className="fill text-xl font-medium w-full lg:w-1/3 rounded-xl h-14 bg-bgButton border-b-2 border-blue-700">
             {" "}
             Claim <span className="font-bold">948 coins</span>
           </button>
@@ -65,7 +78,7 @@ export default function Home() {
       >
         <section
           id="bottom-navbar"
-          className="bg-bgBtNav h-auto lg:w-1/3 w-full rounded-lg p-2"
+          className="bg-bgBtNav h-auto lg:w-1/3 w-full rounded-xl p-2"
         >
           <IconButtons />
         </section>

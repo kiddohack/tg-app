@@ -10,9 +10,9 @@ type ButtonComponents = {
 export default function Button({ path, title, img }: ButtonComponents) {
   return (
     <main className="relative">
-      <div className="absolute top-0 w-20 lg:w-40 left-1 lg:left-10 h-full bg-gradient-to-t from-white/15 to-transparent lg:rounded-3xl rounded-xl filter blur-sm"></div>
+      <div className="absolute top-0 w-20 lg:w-40 left-1 lg:left-10 h-full bg-gradient-to-t from-white/15 to-transparent lg:rounded-3xl rounded-xl filter blur-[2px]"></div>
 
-      <section className="lg:rounded-3xl rounded-xl mx-1 lg:mx-10 p-0 relative border-b-2 border-gray-600 w-20 lg:w-40 h-28 ">
+      <section className="lg:rounded-3xl rounded-xl mx-1 lg:mx-10 p-0 relative border-b-2 border-gray-600 w-20 lg:w-40 h-24 ">
         <div className="flex justify-center items-center h-full ">
           <Link
             href={path}

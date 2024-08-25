@@ -18,10 +18,13 @@ const config: Config = {
         bgButton: "#148bf9",
         bgBtNav: "#131315",
         bgBtButton: "#848485",
-        bgMidd: "#032a57",
+        bgMidd: "#001f3f",
         bgMain: "#0B0B0C",
         topShadow: "#152d6e",
       },
+      boxShadow: {
+        'neon-blue': '0 0 50px #00f, 0 0 100px #00f, 0 0 150px #00f, 0 0 200px #00f, 0 0 300px #00f',
+      }
     },
   },
   plugins: [],
